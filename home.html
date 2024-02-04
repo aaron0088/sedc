@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SEDC BETC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet/stylesheet.scss">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script/carousel.js" async defer></script>
+    </head>
+    <body class="h-screen max-w-screen pl-4 md:pl-0 pr-4 md:pr-0">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <!-- background images -->
+        <div class="fixed">
+            <div class="fixed top-0 left-0 min-h-24 max-w-screen pb-5">
+                <img class="h-12 max-h-screen md:h-24" src="resources/topleft.png" alt="BETC">
+            </div>
+            <div class="fixed top-0 right-0 min-h-24 max-w-screen max-h-screen">
+                <img class="h-12 max-h-screen md:h-24" src="resources/topright.png" alt="BETC">
+            </div>
+            <div class="fixed bottom-0 left-0 min-h-24 max-w-screen max-h-screen">
+                <img class="h-12 max-h-screen md:h-24" src="resources/botleft.png" alt="BETC">
+            </div>
+            <div class="fixed bottom-0 right-0 min-h-24 max-w-screen max-h-screen">
+                <img class="h-12 max-h-screen md:h-24" src="resources/botright.png" alt="BETC">
+            </div>
+
+        
+            
+
+            <div id="green" class="h-screen flex items-center justify-end max-w-screen">
+                <img class="invisible md:visible absolute right-0" src="resources/bg-green.png" alt="Green BETC">
+            </div>
+    
+        </div>
+        <!-- end background images -->
+        
+
+        <!--first section -->
+        <!-- Slides -->
+        <div class = "h-screen flex flex-col items-center justify-center">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                
+                <video class="max-h-[700px]" width="100%" controls autoplay muted loop>
+                    <source src="resources/BTEC-Promo.mp4" type="video/mp4">
+                </video>
+                
+                </div>
+                
+                <div class="mySlides fade">
+                
+                <img src="resources/carousel-one.png" style="width:100%">
+                
+                </div>
+                
+
+                
+            </div>
+                
+                <div class="flex justify-center items-center pb-3" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span>  
+                </div>
+
+        
+        <!-- end slide -->
+
+        <!-- Register button -->
+
+            <div class="flex justify-center items-center content-end pb-5">
+                <a href="https://form.evenesis.com/borneoenergy" target="_blank"><img class="hover:opacity-50 hover:cursor-pointer" src="resources/regbtn.png"></a>
+            </div>
+        </div>
+
+        <!-- end register button -->
+        <!--end first section-->
+
+
+        <!--second section-->
+        <div class="max-w-screen h-screen flex flex-col gap-x-48 md:flex-row ">
+            <div id="green" class="h-screen flex items-center justify-end max-w-screen -z-10">
+                <img class="invisible md:visible absolute right-0" src="resources/bg-green.png" alt="Green BETC">
+            </div>
+
+            <div class="flex items-center justify-center">
+                <img class="" src="resources/betc-logo.png">
+            </div>
+            <div class="flex flex-col gap-y-5 max-w-[600px] items-center justify-center text-justify h-screen">
+                <p class="text-5xl font-bold">ABOUT</p>
+                
+                <p>As the world grapples with the consequences of climate change where traditional energy sources, such as coal and oil, 
+                    contribute significantly to greenhouse gas emissions, exacerbating the climate crisis; transitioning to renewable 
+                    energy sources like solar, wind, and hydropower is crucial to mitigate these environmental impacts. 
+                    Embrace the global imperative of sustainable energy and commit to a cleaner, greener future.</p>
+                <p>Join us at the Borneo Energy Transition Conference 2024, taking place in Kuching, Sarawak, on February 26-27. 
+                    This conference serves as a nexus for thought leaders, change-makers and industry experts, to exchange ideas and catalyze 
+                    action towards a more sustainable energy landscape.</p>
+                <p class="text-3xl font-bold">FEBRUARY 26-27</p>
+                <p>Your presence is not just an attendance, but a step towards shaping the trajectory of our collective energy future. Let's unite in Kuching to power the change our planet needs. .</p>
+
+            </div>
+        </div>
+
+        <!--end second section-->
+
+        <div class="h-48 md:h-0"></div>
+
+        <!--third section-->
+
+        <div class="max-w-screen h-screen">
+
+            <div class="flex md:pl-24 md:pt-36">
+                <p class="font-bold text-5xl">CONFERENCE SCHEDULE</p>
+            </div>
+
+            <div class="flex flex-col gap-y-12 md:gap-y-0 md:gap-x-24 md:flex-row md:pl-12 pt-12">
+                <div class="flex items-center justify-center">
+                    <img class="" src="resources/day-one.png">
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <img class="" src="resources/day-two.png">
+                </div>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
