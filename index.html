@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html class="bg-[#F7F7E4]">
+<html class="bg-[#F7F7E4] scroll-smooth">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,12 +19,35 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        <!--navigation-->
 
+        <div class="fixed md:right-32">
+            <div class="flex flex-row justify-center items-center md:text-xl tex-gray-200 md:gap-x-4">
+                <div class="flex justify-center items-center hover:text-[#21ad4c]">
+                    <a href="#sect1" class="no-underline">HOME</a>
+                </div>
+                <div>|</div>
+                <div class="flex justify-center items-center hover:text-[#21ad4c]">
+                    <a href="#about" class="no-underline">ABOUT</a>
+                </div>
+                <div>|</div>
+                <div class="flex justify-center items-center hover:text-[#21ad4c]">
+                    <a href="#schedule" class="no-underline">SCHEDULE</a>
+                </div>
+                <div>|</div>
+                <div class="flex justify-center items-center hover:text-[#21ad4c]">
+                    <a href="#sect1" class="no-underline">REGISTER</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- end navigation-->
 
 
         <!-- background images -->
-        <div class="fixed">
-            <div class="fixed top-0 left-0 min-h-24 max-w-screen pb-5">
+        <div class="fixed" id="sect1">
+            <div class="fixed top-0 left-0 min-h-24 max-w-screen pb-5 z-10">
                 <img class="h-12 max-h-screen md:h-24" src="resources/topleft.png" alt="BETC">
             </div>
             <div class="fixed top-0 right-0 min-h-24 max-w-screen max-h-screen">
@@ -51,7 +74,7 @@
         <!--first section -->
         <!-- Slides -->
         <div class = "h-screen flex flex-col items-center justify-center">
-            <div class="slideshow-container">
+            <div class="slideshow-container -z-10">
 
                 <div class="mySlides fade">
                 
@@ -91,7 +114,7 @@
 
 
         <!--second section-->
-        <div class="max-w-screen h-screen flex flex-col gap-x-48 md:flex-row ">
+        <div class="max-w-screen h-screen flex flex-col gap-x-48 md:flex-row" id="about">
             <div id="green" class="h-screen flex items-center justify-end max-w-screen -z-10">
                 <img class="invisible md:visible absolute right-0" src="resources/bg-green.png" alt="Green BETC">
             </div>
@@ -102,15 +125,14 @@
             <div class="flex flex-col gap-y-5 max-w-[600px] items-center justify-center text-justify h-screen">
                 <p class="text-5xl font-bold">ABOUT</p>
                 
-                <p>As the world grapples with the consequences of climate change where traditional energy sources, such as coal and oil, 
-                    contribute significantly to greenhouse gas emissions, exacerbating the climate crisis; transitioning to renewable 
-                    energy sources like solar, wind, and hydropower is crucial to mitigate these environmental impacts. 
-                    Embrace the global imperative of sustainable energy and commit to a cleaner, greener future.</p>
-                <p>Join us at the Borneo Energy Transition Conference 2024, taking place in Kuching, Sarawak, on February 26-27. 
-                    This conference serves as a nexus for thought leaders, change-makers and industry experts, to exchange ideas and catalyze 
-                    action towards a more sustainable energy landscape.</p>
-                <p class="text-3xl font-bold">FEBRUARY 26-27</p>
-                <p>Your presence is not just an attendance, but a step towards shaping the trajectory of our collective energy future. Let's unite in Kuching to power the change our planet needs. .</p>
+                <p>As the world faces climate change and the detrimental impact of conventional energy sources like coal and fossil fuels, 
+                    shifting to renewable energy such as solar, wind, and hydropower is crucial to reduce greenhouse gas emissions.</p>
+                <p>Seize the global call for sustainable energy and commit wholeheartedly to a future that is cleaner, greener and more sustainable.</p>
+                <p>Join us at the Borneo Energy Transition Conference (BETC) 2024 in Kuching, Sarawak on February 26-27.</p>
+                <p>This conference serves as a dynamic hub, bringing together visionary thought leaders, change-makers, and industry experts to collaboratively 
+                    explore ideas and catalyse decisive action towards forging a sustainable energy landscape in the region.</p>
+                <p>Your presence transcends mere attendance; it represents a pivotal stride in shaping our shared energy destiny.</p>
+                <p>Let&apos;s unite in Kuching to propel the transformative change our planet urgently requires.</p>
 
             </div>
         </div>
@@ -121,7 +143,7 @@
 
         <!--third section-->
 
-        <div class="max-w-screen h-screen">
+        <div class="max-w-screen h-screen" id="schedule">
 
             <div class="flex md:pl-24 md:pt-36">
                 <p class="font-bold text-5xl">CONFERENCE SCHEDULE</p>
